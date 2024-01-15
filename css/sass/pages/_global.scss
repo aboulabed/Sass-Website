@@ -1,0 +1,62 @@
+body {
+  background-color: #f6f6f6;
+  font-family: Tahoma;
+  font-size: 16px;
+}
+.header {
+  padding: 20px 0;
+  border-bottom: 1px solid $grey-Color;
+  overflow: hidden;
+  .logo {
+    width: 30%;
+    float: $float-left;
+      width: 100%;
+      text-align: center;
+      float: none;
+    
+    @media #{$minMeduim} {
+      width: 30%;
+      text-align: left;
+      float: left;
+    }
+    h1 {
+      margin-bottom: 0;
+      margin-top: 10px;
+    }
+    p {
+    }
+  }
+  .navbar {
+    background-color: $red-Color;
+    border-radius: 15px;
+    overflow: hidden;
+      width: 100%;
+      float: none;
+      margin-top: 1em;
+    
+    @media #{$minMeduim} {
+      margin-top: 16px;
+      width: 70%;
+      float: $float-left;
+    }
+    li {
+      float: $float-left;
+      width: 20%;
+      font-size: 18px;
+      text-align: center;
+      a {
+        display: block;
+        padding: 20px 10px;
+        color: #fff;
+        transition: 0.3s;
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}
+
+.clear {
+  clear: both;
+}

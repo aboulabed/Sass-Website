@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+  @media #{$minSmall} {
+      width: 750px;
+    
+  }
+  @media #{$minMeduim} {
+      width: 970px;
+    
+  }
+  @media #{$minLarge} {
+      width: 1170px;
+    
+  }
+}

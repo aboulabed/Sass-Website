@@ -1,0 +1,121 @@
+footer {
+  background-color: #e0e0e0;
+  margin-top: 50px;
+  padding: 50px 0 0;
+  display: flex;
+  .footer-content {
+    display: flex;
+    gap: 40px;
+    border-bottom: 4px solid #eee;
+    @media #{$maxMeduim} {
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .foot-tit {
+      font-size: 24px;
+      color: #555562;
+      margin-bottom: 27px;
+      position: relative;
+      left: 7px;
+      @media #{$maxMeduim} {
+        font-size: 30px;
+      }
+    }
+    .gallery {
+      width: (100% / 3);
+      @media #{$maxMeduim} {
+        width: 100%;
+      }
+      .img-box {
+        display: flex;
+        @media #{$maxMeduim} {
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        margin-bottom: 40px;
+        margin-top: 15px;
+        .info {
+          margin-left: 15px;
+          h4 {
+            color: $red-Color;
+            margin: 0;
+            font-size: 20px;
+          }
+          p {
+            font-size: 21px;
+            color: #696868;
+            margin-top: 8px;
+            @media #{$maxMeduim} {
+              width: 70%;
+              margin: 20px auto;
+            }
+          }
+        }
+        img {
+          @media #{$maxMeduim} {
+            margin-bottom: 25px;
+          }
+          max-width: 100px;
+          max-height: 100px;
+          border-radius: 6px;
+          border: 3px solid #ccc;
+        }
+      }
+    }
+    .info {
+      @media #{$maxMeduim} {
+        width: 100%;
+      }
+      ul {
+        li {
+          color: #696868;
+          margin: 5px 0;
+          font-size: 18px;
+          &.t {
+            color: #555562;
+            font-size: 21px;
+            margin: 15px 0;
+          }
+        }
+      }
+    }
+    .contact {
+      @media #{$maxMeduim} {
+        width: 100%;
+      }
+      form {
+        input {
+          height: 40px;
+          padding: 5px 10px;
+        }
+        textarea {
+          height: 132px;
+          padding: 10px 10px;
+          resize: none;
+        }
+        input,
+        textarea {
+          width: 130%;
+          @media #{$maxMeduim} {
+            width: 100%;
+          }
+          display: block;
+          margin-bottom: 10px;
+          border: none;
+          border-radius: 6px;
+        }
+        input:last-child {
+          width: 85px;
+          background-color: $red-Color;
+          color: white;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .i {
+    color: #696868;
+    margin: 20px auto;
+    text-align: center;
+  }
+}
